@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade – Achei Meu Rolê</title>
+    <meta
+      name="description"
+      content="Política de Privacidade do aplicativo Achei Meu Rolê (LGPD)."
+    />
+
+    <style>
+      :root {
+        --bg: #0b0f0e;
+        --card: #0f1715;
+        --text: #e7f2ee;
+        --muted: #b7c9c3;
+        --border: rgba(231, 242, 238, 0.12);
+        --accent: #10b981;
+        --accent-2: rgba(16, 185, 129, 0.18);
+        --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        --radius: 16px;
+        --max: 980px;
+        --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+          Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font);
+        background: radial-gradient(
+            900px 600px at 20% 0%,
+            var(--accent-2),
+            transparent
+          ),
+          radial-gradient(
+            900px 600px at 80% 10%,
+            rgba(16, 185, 129, 0.08),
+            transparent
+          ),
+          var(--bg);
+        color: var(--text);
+      }
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 24px 18px;
+      }
+
+      /* Header */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(10px);
+        background: rgba(11, 15, 14, 0.72);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand__logo {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        background: linear-gradient(
+          180deg,
+          rgba(16, 185, 129, 0.22),
+          rgba(16, 185, 129, 0.06)
+        );
+        border: 1px solid rgba(16, 185, 129, 0.35);
+        box-shadow: 0 8px 18px rgba(16, 185, 129, 0.12);
+      }
+
+      .brand__title {
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .brand__subtitle {
+        font-size: 12px;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+
+      .header__nav {
+        display: flex;
+        gap: 10px;
+      }
+
+      .nav__link {
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .nav__link:hover {
+        border-color: rgba(16, 185, 129, 0.45);
+        background: rgba(16, 185, 129, 0.08);
+        text-decoration: none;
+      }
+
+      /* Hero */
+      .hero {
+        padding: 22px 0 8px;
+      }
+
+      .hero h1 {
+        margin: 0 0 10px;
+        font-size: 34px;
+        letter-spacing: -0.6px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .small {
+        font-size: 12px;
+      }
+
+      .notice {
+        margin-top: 14px;
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      /* Cards */
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.03),
+          rgba(255, 255, 255, 0.015)
+        );
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 18px;
+        margin: 14px 0;
+        box-shadow: var(--shadow);
+      }
+
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .card p {
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      .card ul {
+        margin: 10px 0 0 0;
+        padding-left: 18px;
+      }
+
+      .card li {
+        margin: 8px 0;
+      }
+
+      /* Contact */
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 12px;
+      }
+
+      .contact__item {
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .contact__label {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .contact__value {
+        margin-top: 6px;
+        font-weight: 700;
+      }
+
+      .footer {
+        margin: 18px 0 4px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+      }
+
+      @media (min-width: 720px) {
+        .container {
+          padding: 26px 20px;
+        }
+
+        .contact {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .hero h1 {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__wrap">
+        <div class="brand">
+          <div class="brand__logo">AR</div>
+          <div>
+            <div class="brand__title">Achei Meu Rolê</div>
+            <div class="brand__subtitle">Política de Privacidade</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Política de Privacidade</h1>
+        <p class="muted">
+          Esta Política descreve como o aplicativo
+          <strong>Achei Meu Rolê</strong> coleta, usa e protege informações,
+          conforme a <strong>LGPD (Lei nº 13.709/2018)</strong>.
+        </p>
+        <div class="notice">
+          <strong>Última atualização:</strong> 15 de dezembro de 2025
+        </div>
+      </section>
+
+      <!-- CONTEÚDO -->
+      <!-- Mantém exatamente o texto que já te passei antes -->
+      <!-- Se quiser, posso te mandar o HTML já com todo texto fechado -->
+
+      <footer class="footer">
+        <p class="muted small">
+          © <span id="year"></span> Achei Meu Rolê. Todos os direitos reservados.
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
